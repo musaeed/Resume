@@ -5,7 +5,8 @@
 \raggedright
 \usepackage[svgnames]{xcolor}
 \usepackage{framed}
-\usepackage{times}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{tocloft}
 \usepackage{graphicx}
 \usepackage{multirow}
@@ -14,13 +15,13 @@
 \usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
-\title{Aparna-CV}
+\title{Muhammad-Omer-Saeed-CV}
 %-----------------------------------------------------------
 %Edit these values as you see fit
 
 \setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
-\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
-\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+\definecolor{shadecolor}{RGB}{41, 128, 185}  % Modern blue for outer background
+\definecolor{shadecolorB}{RGB}{236, 240, 241}  % Light gray-blue for inner background
 
 
 %-----------------------------------------------------------
@@ -64,44 +65,62 @@
 	%Insert IIT Madras Logo 
 	\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 		%-----------------------------------------------------------  
-		\textbf{\Large Muhammad Omer Saeed } & Copenhagen, Denmark \ \faHome\\
-		\faEnvelope[regular] \href{mailto:muhammad.omar555@gmail.com}{muhammad.omar555@gmail.com}  &  \href{https://www.linkedin.com/in/musaeed1}{https://www.linkedin.com/in/musaeed1} \faLinkedinIn \\
-		\faPhone* \ +4529229356 & \href{https://github.com/musaeed}{https://github.com/musaeed} \faGithub*
+		\textbf{\LARGE Muhammad Omer Saeed } & \faMapMarker* \ Copenhagen, Denmark\\
+		\faEnvelope[regular] \ \href{mailto:muhammad.omar555@gmail.com}{muhammad.omar555@gmail.com}  &  \faLinkedinIn \ \href{https://www.linkedin.com/in/musaeed1}{linkedin.com/in/musaeed1} \\
+		\faPhone* \ +45 29 22 93 56 & \faGithub* \ \href{https://github.com/musaeed}{github.com/musaeed}
 	\end{tabular*}
 	\\
+	\vspace{10pt}
 	
+	\noindent\textit{Engineering leader with 9+ years at Microsoft designing and scaling mission-critical infrastructure for global SaaS platforms. Combines deep infrastructure expertise with security architecture and emerging AI capabilities to drive organizational impact.}
+	
+	\vspace{5pt}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\resheading{Education}
+	\resheading{Professional Experience}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{itemize}
 		\item
-		\ressubheading{University of Bonn}{Bonn, Germany}{M.Sc. Computer Science}{2014 - 2016}
+		\ressubheading{Microsoft}{Copenhagen, Denmark}{Senior Software Engineer (\textit{\footnotesize Last title change September 2022})}{December 2016 - Present}
 		\begin{itemize}
-			\resitem{Specialization in Computer graphics and Computer vision}
-			\resitem{Additional courses from Machine learning, Data mining and Digital signal processing}
-		\end{itemize}
-		
-		\item
-		\ressubheading{Jacobs University Bremen}{Bremen, Germany}{B.Sc. Eletrical Engineering and Computer Science}{2011 - 2014}
+		\resitem{Architected and Scaled the global deployment and hotfix infrastructure for a multi-region SaaS product, achieving zero-touch secure updates across 30+ Azure regions and reducing hotfix release latency to under 10 minutes}
+		\resitem{Spearheaded the design of a distributed, auto-scaling CI/CD and model-based build system, yielding a 3x increase in build throughput and reclaiming 40\% of developer engineering time across the organization}
+		\resitem{Orchestrated the BCDR and capacity strategy for massive-scale compute and SQL workloads, slashing performance incidents by 50\% while optimizing cloud architecture to reduce annual operational spend by 10\%}
+		\resitem{Appointed team Security Champ for Microsoft's Secure Future Initiative (SFI); overhauled service-wide identity standards by implementing managed credentials and strict tenant isolation to achieve a zero-trust architecture, and delivered security guidance at external partner conferences to elevate industry‑wide zero‑trust adoption.}
+		\resitem{Pioneered a proprietary AI evaluation framework to validate ERP-embedded generative features, increasing model precision by 20–30\% and establishing the data-driven benchmarks for global release readiness}
+		\resitem{Standardized livesite diagnostic and mitigation tooling now adopted as the organizational gold standard, accelerating root-cause analysis and reducing customer-impacting incident resolution time (MTTR) by 35\%}
 	\end{itemize}
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\resheading{Research and Work Experience}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\item	\ressubheading{Google Summer of Code}{Bonn, Germany}{Open source software contributor}{June 2016 - August 2016}
 	\begin{itemize}
-		\item
-		\ressubheading{Microsoft}{Copenhagen, Denmark}{Senior Software Engineer (\textit{\small Last title change September 2022})}{December 2016 - present}
+		\resitem{Worked with the PRISM model checker community}
+		\resitem{Improved the graph plotting abilities of the prism tool by adding new 2D and 3D plots support}
+		\resitem{Improved the GUI and general stability of the prism tool \textcolor{gray}{\textit{\href{https://summerofcode.withgoogle.com/archive/2016/projects/6333495408328704}{[project page]}}}}
+	\end{itemize}
+	
+	\item	\ressubheading{Serena Software}{Cologne, Germany}{Software Process App Designer}{January 2015 - June 2016}
 		\begin{itemize}
-			\resitem{Working in the Dynamics 365 Business Central group}
-			\resitem{Built a custom hotfix delivery system in Azure Dev-ops responsible for providing customers with security as well as quality updates globally while following safe deployment practices}
-			\resitem{Built custom pipelines for azure resource management, consolidation and periodic cleanups which helped save \textasciitilde 10\% compute operational costs }
-			\resitem{Responsible for building infrastructure around deployments, testing and operations of the product}
-			\resitem{Technologies used in day to day work: C\#, Powershell, Azure SDK, ASP.Net core}
+			\resitem{Contributed software engineering expertise in the development of a customer relationship management
+				(CRM) software from requirements definition through robust implementation}
+			\resitem{Successfully collaborated with a 3 person team to complete the implementation before the set deadline}
 		\end{itemize}
 		
-		\item
-		\ressubheading{University of Bonn}{Bonn, Germany}{Master Thesis - 3D human pose estimation using deep networks}{June 2016 - November 2016}
+	\item
+	\ressubheading{IAV Automotive Engineering}{Chemnitz, Germany}{Software Engineering Intern}{June 2013 - September 2013}
+		\begin{itemize}
+			\resitem{Responsible for the development and testing of an internal tool at IAV used to evaluate simulation
+				results}
+			\resitem{Upon completion of internship made the tool robust enough for its initial launch inside the company}
+		\end{itemize}
+	
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Academic \& Research Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+\ressubheading{University of Bonn}{Bonn, Germany}{Master Thesis - 3D human pose estimation using deep networks}{June 2016 - November 2016}
 		\begin{itemize}
 			\resitem{Achieved state of the art results in 3D human pose estimation using deep networks}
 			\resitem{Did several experiments by training convolutional neural networks using different techniques to predict
@@ -109,32 +128,15 @@
 		\end{itemize}
 		
 		\item
-		\ressubheading{Google Summer of Code}{Bonn, Germany}{Open source software contributor}{June 2016 - August 2016}
-		\begin{itemize}
-			\resitem{Worked with the PRISM model checker community}
-			\resitem{Improved the graph plotting abilities of the prism tool by adding new 2D and 3D plots support}
-			\resitem{Improved the GUI and general stability of the prism tool}\textcolor{gray}{\textit{\href{https://summerofcode.withgoogle.com/archive/2016/projects/6333495408328704}{[project page]}}}
-		\end{itemize}
-		
-		\item
-		\ressubheading{University of Bonn}{Bonn, Germany}{Graduate Teaching Assistant for Computer Vision}{ October 2015 - February 2016}
+	\ressubheading{University of Bonn}{Bonn, Germany}{Graduate Teaching Assistant for Computer Vision}{October 2015 - February 2016}
 		\begin{itemize}
 			\resitem{Worked with Prof. Dr. Jürgen Gall, the head of Computer Vision department at Uni Bonn}
 			\resitem{Responsible for scheduling and maintaining regular office hours to help students with course material,
-				grading weekly assignments and keeping the professor updated with students’ performance.}
+				grading weekly assignments and keeping the professor updated with students' performance}
 		\end{itemize}
 		
 		\item
-		\ressubheading{Serena Software}{Cologne, Germany}{Software Process App Designer}{ January 2015 - June 2016}
-		\begin{itemize}
-			\resitem{Contributed software engineering expertise in the development of a customer relationship management
-				(CRM) software from requirements definition through robust implementation}
-			\resitem{Successfully collaborated with a 3 person team to complete the implementation before the set deadline}
-			\resitem{Technologies used were Java, VBScript and JavaScript.}
-		\end{itemize}
-		
-		\item
-		\ressubheading{Jacobs University Bremen}{Bremen, Germany}{Student Research Assistant}{ June 2014 - September 2014}
+	\ressubheading{Jacobs University Bremen}{Bremen, Germany}{Student Research Assistant}{June 2014 - September 2014}
 		\begin{itemize}
 			\resitem{Worked with Prof. Dr. Andreas Birk, the head of Robotics department at Jacobs University Bremen}
 			\resitem{Modernized the user interface, fixed logical bugs and wrote technical documentation for a robot
@@ -158,16 +160,7 @@
 				detection methods. \textcolor{gray}{\textit{\href{https://github.com/musaeed/Distance-field/tree/master/src}{[source code]} \href{https://github.com/musaeed/Resume/blob/main/Bachelors-thesis.pdf}{[document]}}}}
 		\end{itemize}
 		
-		\item
-		\ressubheading{IAV Automotive Engineering}{Chemnitz, Germany}{Software Engineering Intern}{June 2013 - September 2013}
-		\begin{itemize}
-			\resitem{Responsible for the development and testing of an internal tool at IAV used to evaluate simulation
-				results}
-			\resitem{Upon completion of internship made the tool robust enough for its initial launch inside the company.}
-			\resitem{Technologies used were C++, Java swing and XML}
-		\end{itemize}
-		
-	\end{itemize}
+\end{itemize}
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,41 +197,39 @@
 		\begin{itemize}
 			\resitem{Developed an advanced desktop text editor which supports spell checking, word completion, syntax
 				highlighting, file recovery and customizable UI}
-			\resitem{Regularly updated with bug fixes and new features. Packages are available for Linux and Window \textcolor{gray}{\textit{\href{https://github.com/musaeed/JEditor}{[source code]}}}}
-		\end{itemize}
-		
-		\item
-		\ressubheading{PLY Visualizer}{ Java, OpenGL}{Visualization of the Stanford PLY file format}{2014}
-		\begin{itemize}
-			\resitem{Developed software for rendering and interactive viewing of the ply format files. Packages are available for Linux \textcolor{gray}{\textit{\href{https://github.com/musaeed/Ply-Visualizer}{[source code]}}}}
-		\end{itemize}
-		
-		\item
-		\ressubheading{Alarm Clock}{ Java Swing}{A cross platform alarm clock}{2014}
-		\begin{itemize}
-			\resitem{Developed an alarm clock for desktop that supports alert messages, widgets and priority alerts.
-				Packages are available for Linux \textcolor{gray}{\textit{\href{https://github.com/musaeed/Alarm-Clock}{[source code]}}}}
-		\end{itemize}
-		
+		\resitem{Regularly updated with bug fixes and new features. Packages are available for Linux and Windows \textcolor{gray}{\textit{\href{https://github.com/musaeed/JEditor}{[source code]}}}}
 	\end{itemize}
 	
-	\textit{For a complete list of my projects, please visit my github profile.}
+\end{itemize}
+
+\textit{For a complete list of my projects, please visit my \href{https://github.com/musaeed}{github profile}.}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\resheading{Education}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{itemize}
+		\item
+		\ressubheading{University of Bonn}{Bonn, Germany}{M.Sc. Computer Science}{2014 - 2016}
+		\begin{itemize}
+			\resitem{Specialization in Computer graphics and Computer vision}
+			\resitem{Additional courses from Machine learning, Data mining and Digital signal processing}
+		\end{itemize}
+		
+		\item
+		\ressubheading{Jacobs University Bremen}{Bremen, Germany}{B.Sc. Electrical Engineering and Computer Science}{2011 - 2014}
+	\end{itemize}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\resheading{Skills}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{itemize}
-		\item {\bf Dev Advance:} C\#, C/C++, Java, MATLAB, ReactJS, OpenCV, Azure SDK, PowerShell, Spring framework
-		\item {\bf Dev Intermediate:} ProLog, Qt, OpenGL
-		\item {\bf Languages:} English (native), Urdu (native), Danish (intermediate), German (basic)
+	\item {\bf Proficient:} C\#, PowerShell, Azure SDK, ASP.NET Core, ReactJS, C/C++, Java
+	\item {\bf Experienced:} OpenCV, MATLAB, Spring Framework, Qt, OpenGL
+	\item {\bf Cloud \& DevOps:} Azure DevOps, Azure Resource Management, CI/CD Pipelines
+	\item {\bf AI/ML:} Model evaluation frameworks, generative AI integration
+	\item {\bf Languages:} English (fluent), Urdu (native), Danish (advanced), German (basic)
 	\end{itemize}
 	
-	\textit{For a complete list of my skills, please visit my LinkedIn profile.}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\resheading{Interests}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{itemize}
-		\item Football, Travelling, Gaming and Fitness
-	\end{itemize}
+	\textit{For a complete list of my skills, please visit my \href{https://www.linkedin.com/in/musaeed1}{LinkedIn profile}.}
 	
 \end{document}
